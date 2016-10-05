@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 $sql = "show columns from USUARIOS";
 $result = $conn->query($sql);
 
-$result->fetch_assoc();
+$result->fetch_fields();
 
 var_dump($result);
 
